@@ -9,6 +9,7 @@
     "db:generate": "turbo db:generate",
     "db:push": "turbo db:push db:generate",
     "dev": "turbo dev --parallel",
+    "dev:api": "turbo dev --filter=nextjs --filter=api",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo lint",
     "FIXME:lint": "turbo lint && manypkg check",
@@ -29,5 +30,8 @@
     "patchedDependencies": {
       "react-native@0.70.5": "patches/react-native@0.70.5.patch"
     }
+  },
+  "devDependencies": {
+    "@sn0wye/eslint-config": "^1.8.1"
   }
 }
